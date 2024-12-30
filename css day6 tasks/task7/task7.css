@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "lt lt rt rt"
+    "lt lt rt rt";
+}
+.left {
+  grid-area: lt;
+}
+.table {
+  grid-area: rt;
+}
+.yellow {
+  background-color: yellowgreen;
+}

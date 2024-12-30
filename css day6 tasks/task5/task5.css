@@ -1,0 +1,15 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "nav mn mn mn mn"
+    "nav mn mn mn mn";
+  height: 300px;
+  /* border: 1px solid black; */
+}
+.bar {
+  grid-area: nav;
+}
+.main {
+  grid-area: mn;
+}

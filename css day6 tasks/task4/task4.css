@@ -1,0 +1,14 @@
+.img{
+    background-image: url(camera-510530_1280.jpg);
+width: 500px;
+height: 500px;
+    background-size: cover;
+}
+@media only screen and (max-width:600px){
+    .img{
+        background-image: url(bread-6889039_1280.jpg);
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+}

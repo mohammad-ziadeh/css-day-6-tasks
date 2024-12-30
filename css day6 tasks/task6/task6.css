@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-areas:
+    "mn mn mn"
+    "cd1 cd2 cd3";
+}
+#main{
+  grid-area: mn;
+  background-color: rgb(230, 230, 230);
+}
+
+#card1 {
+  grid-area: cd1;
+
+}
+
+#card2 {
+  grid-area: cd2;
+}
+
+#card3 {
+  grid-area: cd3;
+}

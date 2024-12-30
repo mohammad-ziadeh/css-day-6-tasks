@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  width: 70%;
+  margin-left: 15%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 150px);
+  grid-template-areas:
+    "hd hd hd"
+    "mn mn mn"
+    "cd1 cd2 cd3"
+    "cd1 cd2 cd3"
+    "cd1 cd2 cd3";
+}
+nav {
+  height: 60px;
+  grid-area: hd;
+}
+main {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 30px;
+  grid-area: mn;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+h5 {
+  align-content: center;
+  height: 40px;
+  background-color: lightslategray;
+}
+#card1 {
+  padding-top: 0px;
+  margin-top: 40px;
+  grid-area: cd1;
+
+}
+.price{
+  font-size: 40px;
+}
+.card-text{
+padding: 50px;
+padding-top: 0%;
+padding-bottom: 0%;
+
+}
+
+#card2 {
+  margin-top: 40px;
+  grid-area: cd2;
+}
+
+#card3 {
+  margin-top: 40px;
+  grid-area: cd3;
+}
